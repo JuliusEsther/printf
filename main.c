@@ -13,6 +13,7 @@ int main(void)
     int len2;
     unsigned int ui;
     void *addr;
+    int count = 5;
 
     len = _printf("Let's try to printf a simple sentence.\n");
     len2 = printf("Let's try to printf a simple sentence.\n");
@@ -38,7 +39,7 @@ int main(void)
     len2 = printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
-    _printf("Unknown:[%r]\n");
-    printf("Unknown:[%r]\n");
+    _printf("Count:[%d]\n", count);
+    printf("Count:[%d]\n", count);
     return (0);
 }
